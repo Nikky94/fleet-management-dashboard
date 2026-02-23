@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>車隊狀況管理報表</title>
+  <title>車隊管理報表</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
   <style>
@@ -992,13 +992,13 @@
 const data = {
   summary: {
     totalVehicles: 29,
-    activeVehicles: 35,
-    idleVehicles: 8,
-    maintenanceVehicles: 5,
-    utilizationRate: 72.9,
-    fleetAge: { under1Year: 6, "1to3Years": 18, "3to5Years": 16, over5Years: 8 },
-    vehicleTypes: { sedan: 20, suv: 14, van: 8, truck: 6 },
-    contractStatus: { active: 35, expiringSoon: 8, expired: 3, idle: 2 }
+    activeVehicles: 29,
+    idleVehicles: 0,
+    maintenanceVehicles: 0,
+    utilizationRate: 100.0,
+    fleetAge: { under1Year: 27, "1to3Years": 2, "3to5Years": 0, over5Years: 0 },
+    vehicleTypes: { sedan: 26, suv: 1, van: 2, truck: 0 },
+    contractStatus: { active: 29, expiringSoon: 0, expired: 0, idle: 0 }
   },
   monthlyTrend: [
     {month:"2025-03",revenue:265,expense:185,profit:80,utilization:68.5},
@@ -1047,10 +1047,10 @@ const data = {
   ],
   costBreakdown: {acquisition:42.5,maintenance:18.2,fuel:20.8,insurance:10.5,other:8.0},
   vehicleTypePerformance: [
-    {type:"轎車",count:20,avgUtilization:68.5,avgProfit:12750,avgProfitMargin:1.9},
-    {type:"SUV",count:14,avgUtilization:76.8,avgProfit:65750,avgProfitMargin:5.4},
-    {type:"廂型車",count:8,avgUtilization:89.9,avgProfit:271000,avgProfitMargin:15.0},
-    {type:"貨卡",count:6,avgUtilization:84.9,avgProfit:85000,avgProfitMargin:6.3}
+    {type:"轎車",count:26,avgUtilization:68.5,avgProfit:12750,avgProfitMargin:1.9},
+    {type:"SUV",count:1,avgUtilization:76.8,avgProfit:65750,avgProfitMargin:5.4},
+    {type:"廂型車",count:2,avgUtilization:89.9,avgProfit:271000,avgProfitMargin:15.0},
+    {type:"貨卡",count:0,avgUtilization:84.9,avgProfit:85000,avgProfitMargin:6.3}
   ]
 };
 
